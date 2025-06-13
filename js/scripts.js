@@ -23,12 +23,3 @@ function activate(e) {
 }
 
 document.addEventListener('click',activate,false);
-
-
-AOS.init({
-    once: true,
-    duration: 800,
-  });
-
-  window.history.scrollRestoration = 'manual';
-  window.scrollTo(0, 0);
