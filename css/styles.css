@@ -56,18 +56,18 @@ h1 {
 }
 
 h2 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 p {
-    font-size: 18px;
-    color: #ffffff;
+  font-size: 16px;
+  color: #ffffff;
 }
 
 .nav-link{
-    font-size: 14px;
-    color:#ffffff;
-    font-weight: 400;
+  font-size: 14px;
+  color:#ffffff;
+  font-weight: 400;
 }
 
 html {
@@ -80,29 +80,93 @@ html {
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: transparent;
   padding: 25px;
 }
 
 #hero {
-  background-color: #000000;
-  background-position: center;
+/* background-color: #000000; */
+    background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 20px;
   display: flex;
   align-items: center;
+  background-image: url(../assets/bg-4.jpg);
+  margin-top: -120px;
+  height: 100vh;
 }
 
 
-#about ,#experience,#latest-project,#contact-us{
-  background-color: #000000;
+#about ,#experience,#latest-project{
+  /* background-color: #000000; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 20px;
 }
 
+
+#about, #contact-us{
+  background-color: #000000;
+}
+
+#contact-us .container{
+  background: linear-gradient(90deg, hsla(212, 100%, 48%, 1) 0%, hsla(163, 83%, 57%, 1) 100%);
+  border-radius: 20px;
+  padding: 50px;
+}
+
+#latest-project {
+  background-color: #000000;
+}
+
+#experience{
+  background-image: url(../assets/bg-5.jpg);
+}
+
+.btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.btn-grad {
+ 
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+.btn-grad:hover {
+  background-position:  center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero .lead {
+  margin-bottom: 50px;
+}
+
+.get-touch-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+#contact-us .col-lg-4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.modal-content {
+   background-color: #000000;
+   text-align: center;
+   color: #ffffff;
+   border: 1px solid #ffffff;
+}
 
 .header-text {
   margin-bottom: 90px;
@@ -176,7 +240,6 @@ html {
   
 }
 
-
 .navbar-toggler {
     padding: 0!important;
 }
@@ -197,6 +260,10 @@ html {
   h2 {
       font-size: 40px;
   }
+
+  .navbar {
+    background-color: #000000 !important;
+}
 
 }
 
@@ -461,4 +528,66 @@ main {
   .footer nav a {
     margin: 0 3px;
   }
+
+  #contact-us .container {
+    padding: 30px;
+    text-align: center;
+  }
+
+  #contact-us .col-lg-4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+}
+
+
+.experience-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.experience-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px;
+  text-align: center;
+}
+
+.experience-item h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.experience-marquee:hover .experience-track {
+  animation-play-state: paused;
 }
