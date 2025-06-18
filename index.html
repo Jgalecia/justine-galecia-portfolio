@@ -27,15 +27,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>
     
 </head>
 
 <body>
     <section id="header">
-        <nav class="navbar navbar-expand-md">
+        <!-- <nav class="navbar navbar-expand-md">
             <div class="container">
                   <a href="#hero"><p class="nav-logo">JG</p></a>
                 <div class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +69,29 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+
+        <div class="page-wrapper">
+            <div class="nav-wrapper">
+                <div class="grad-bar"></div>
+                    <nav class="navbar container">
+                         <a href="#hero"><p class="nav-logo">JG</p></a>
+                        <div class="menu-toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="nav link-items">
+                            <li class="nav-item"><a href="#hero">Home</a></li>
+                            <li class="nav-item"><a href="#about">About</a></li>
+                            <li class="nav-item"><a href="#latest-project">Work</a></li>
+                            <li class="nav-item"><a href="#experience">Skills</a></li>
+                            <li class="nav-item"><a href="#contact-us">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="hero">
         <div class="container">
@@ -75,7 +103,7 @@
                         <span class="name">Justine Galecia</span>
                        </h1>
                         <p class="lead">Web Developer | Software Enthusiast | Tech Explorer</p>
-                        <a href="./assets/Galecia Justine.pdf" class="btn-grad" download target="_blank">DOWNLOAD CV  <i class="fa-solid fa-download"></i></a>
+                        <a href="./assets/Galecia Justine.pdf" class="btn-grad btn-primary" download target="_blank">DOWNLOAD CV  <i class="fa-solid fa-download"></i></a>
                     </div>
                 </div>
                 <!-- <div class="col-lg-6">
@@ -95,8 +123,7 @@
                         <p class="big-letter">About Me</p>
                         <h2 class="text-center fw-bold mb-4">About Me</h2>
                         <p class="text-center about-content">
-                            I'm a passionate developer based in the Philippines, with experience in WordPress, front-end development,
-                            and basic backend integrations. I love building clean, user-friendly interfaces and exploring new technologies.
+                            "I'm a dedicated developer from the Philippines with experience in WordPress, front-end development, and basic backend integration. I focus on building clean, user-friendly interfaces and love staying up to date with emerging technologies."
                         </p>
                     </div>
                 </div>
@@ -179,6 +206,7 @@
       <div class="col-lg-12 header-text" data-aos="fade-up">
         <p class="big-letter">Experience</p>
         <h2 class="text-center fw-bold mb-4">Experience</h2>
+        <p class="text-center exp-content">These are the tools and technologies that help me turn imagination into interactive digital experiences.</p>
       </div>
     </div>
 
@@ -234,9 +262,6 @@
           <img src="./assets/icons/icon-bitbucket.png" class="icon" />
           <h4>BITBUCKET</h4>
         </div>
-
-        <!-- Repeat items to create a seamless loop -->
-        <!-- You can duplicate the same items here to make it loop continuously -->
       </div>
     </div>
   </div>
@@ -249,6 +274,7 @@
                 <div class="col-lg-12 header-text" data-aos="fade-up">
                     <p class="big-letter">Latest Project</p>
                     <h2 class="text-center fw-bold">Latest Project</h2>
+                    <p class="latest-content text-center">A selection of my recent work, where every project was an opportunity to solve problems and create something with purpose.</p>
                </div>
                <div class="col-lg-3" data-aos="fade-up">
                     <a href="https://northcountryphc.com/" target="_blank"><img src="./assets/latest-project-img01.jpg" class="project-img"></a>
@@ -266,7 +292,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary mt-3">See More</a>
+                <a href="#" class="btn btn-see-more btn-primary mt-3">See More</a>
             </div>
                 
         </div>
@@ -330,9 +356,7 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>
